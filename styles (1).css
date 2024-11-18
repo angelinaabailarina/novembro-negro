@@ -1,0 +1,232 @@
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh; /* Altera para ocupar a tela inteira */
+  margin: 0;
+  background-color: #ffd270;
+
+ 
+
+}
+
+.content {
+  color: white; /* Torna o texto visível se a imagem for escura */
+  text-align: center;
+  padding: 20px;
+}
+
+
+.carousel-container {
+  width: 100%; /* Ajustado para ocupar a largura da tela */
+  height: 60%; /* Ocupa a altura da tela */
+  overflow: hidden;
+  border: none; /* Remove bordas */
+  border-radius: 0; /* Remove bordas arredondadas */
+}
+
+.carousel {
+  display: flex;
+  width: 70%; /* Mantém a largura total para a animação */
+  height: 60%; /* Garante que a altura seja preenchida */
+  animation: slide 12s infinite;
+}
+
+.carousel img {
+  width: 100%; /* As imagens ocupam a largura da tela */
+  height: 60%;
+  object-fit: cover; /* Ajusta as imagens para cobrir a caixa */
+  flex: 1 0 100%; /* Cada imagem ocupa 100% da largura do contêiner */
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Definindo a animação para percorrer todas as imagens e voltar ao início */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  9% { transform: translateX(-100%); }   
+  18% { transform: translateX(-200%); }   
+  27% { transform: translateX(-300%); }   
+  36% { transform: translateX(-400%); }   
+  45% { transform: translateX(-500%); }  
+  54% { transform: translateX(-600%); }   
+  63% { transform: translateX(-700%); }  
+  72% { transform: translateX(-800%); }   
+  81% { transform: translateX(-900%); }   
+  90% { transform: translateX(-1000%); }  
+  100% { transform: translateX(0); }      
+}
+
+.carousel {
+  display: flex;
+  width: 100%;
+  animation: slide 30s infinite linear; 
+}
+
+#quiz {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #dca141;
+  border: 2px solid #ab8a61;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#quiz h2 {
+  color: #83462c;
+  margin-bottom: 20px;
+}
+
+.quiz-container {
+  margin-bottom: 15px;
+}
+
+.question {
+  font-size: 18px;
+  font-weight: bold;
+  color: #6e4110;
+  margin-bottom: 10px;
+}
+
+.options button {
+  display: block;
+  width: 80%;
+  margin: 5px auto;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #694b13;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.options button:hover {
+  background-color: #493505;
+}
+
+.options button.correct {
+  background-color: #4CAF50;
+  cursor: not-allowed;
+}
+
+.options button.wrong {
+  background-color: #E53935;
+  cursor: not-allowed;
+}
+
+#quiz-result {
+  font-size: 18px;
+  color: #442D1C;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+
+
+
+.blog-header {
+  background-color: #ffd900b6;
+  color: black;
+}
+.blog-header a {
+  color: black;
+}
+
+.nav-scroller {
+  background-color: #343a40;
+}
+
+.nav a {
+  color: white;
+}
+
+.jumbotron {
+  background-color: #343a40;
+  color: white;
+}
+
+.card {
+  border: none;
+  margin-bottom: 10px;
+}
+.card .card-body {
+  background-color: white;
+}
+.card h3 a {
+  color: #ff6f20;
+}
+
+.blog-main {
+  margin-bottom: 20px;
+}
+
+.blog-footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+}
+
+.btn-outline-secondary {
+  border-color: #ff6f20;
+  color: #ff6f20;
+}
+.btn-outline-secondary:hover {
+  background-color: #ff6f20;
+  color: white;
+}
+.footer {
+  background-color: #1a1a1a; 
+  color: #f2f2f2; 
+  padding: 10px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  width: 100%; 
+  box-sizing: border-box;
+  margin: 0; 
+  position: relative; 
+  left: 0;
+}
+
+
+.footer p {
+  margin: 10px 0;
+}
+
+.footer a {
+  color: #ffcc00; 
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #ff9900; 
+}
+
+.footer address {
+  font-style: normal;
+  margin-top: 10px;
+}
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+    }
+    th {
+        background-color: #343a40;
+        color: white;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    caption {
+        font-size: 1.5em;
+        margin: 10px 0;
+    }
